@@ -1,0 +1,115 @@
+commit d836bb3b6b2940953de7c511970b0e314281be2c
+Author: Essi Tepponen <essi.tepponen@helsinki.fi>
+Date:   Tue Mar 19 00:52:50 2019 +0200
+
+    muutoksia tiedostoihin
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 4362a5730fdc9d93738ae6b0ef7bda8b16be49e6
+Author: Essi Tepponen <essi.tepponen@helsinki.fi>
+Date:   Tue Mar 19 00:39:45 2019 +0200
+
+    lisätty tiedostoja/
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit f22eed08d72386afa4b0281c9bbf1c772ae48591
+Author: Essi Tepponen <essi.tepponen@helsinki.fi>
+Date:   Tue Mar 19 00:28:17 2019 +0200
+
+    muokattu eka.txt ja kolmas.txt
+
+ eka.txt    | 5 +++--
+ kolmas.txt | 3 ++-
+ 2 files changed, 5 insertions(+), 3 deletions(-)
+
+commit 07757a82ae1e34df36d88539027b320d0d909d38
+Author: Essi Tepponen <essi.tepponen@helsinki.fi>
+Date:   Tue Mar 19 00:24:17 2019 +0200
+
+    nimettiin uudelleen tiedosto.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 9ddc7a8d7b37425d0729f71af2706d2f4b1246fd
+Author: Essi Tepponen <essi.tepponen@helsinki.fi>
+Date:   Tue Mar 19 00:18:09 2019 +0200
+
+    poistettu toinen.txt
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 62b7b58fcfb68f29df12ccd07f719b73b04bc906
+Author: Essi Tepponen <essi.tepponen@helsinki.fi>
+Date:   Tue Mar 19 00:15:14 2019 +0200
+
+    muokattu tiedosto.txt
+
+ tiedosto.txt | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+
+commit c411eda9e45e1211fe3e3cdc68bdf7cf2c3ffd1d
+Author: Essi Tepponen <essi.tepponen@helsinki.fi>
+Date:   Tue Mar 19 00:13:32 2019 +0200
+
+    muokattu tiedosto.txt
+
+ tiedosto.txt | 11 +++++++++++
+ tietosto.txt |  1 -
+ 2 files changed, 11 insertions(+), 1 deletion(-)
+
+commit ff6ab736ff56633b442622594b610bdc837832f3
+Author: Essi Tepponen <essi.tepponen@helsinki.fi>
+Date:   Tue Mar 19 00:07:14 2019 +0200
+
+    lisätty stuff
+
+ stuff/jokutiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ae4e9aaf46887b037521a6d04bf0842e30d07446
+Author: Essi Tepponen <essi.tepponen@helsinki.fi>
+Date:   Tue Mar 19 00:05:01 2019 +0200
+
+    muokattu kolmas.txt ja toinen.txt
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit d138865e9eccabfc00510a0af793d53bad9bac9c
+Author: Essi Tepponen <essi.tepponen@helsinki.fi>
+Date:   Tue Mar 19 00:03:23 2019 +0200
+
+    lisätty kolmas.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 9028f58417cf112367d8812ac6d7fb6b0ad80322
+Author: Essi Tepponen <essi.tepponen@helsinki.fi>
+Date:   Mon Mar 18 23:58:54 2019 +0200
+
+    muutos ja lisäys
+
+ tietosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 76f2b7ee1c61b4ffa1add9034e7b231c82bfa95b
+Author: Essi Tepponen <essi.tepponen@helsinki.fi>
+Date:   Mon Mar 18 23:56:37 2019 +0200
+
+    tiedosto.txt luotu
+
+ tietosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
