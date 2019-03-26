@@ -8,5 +8,5 @@
 
 ## Dokumentaatio
 
-[Vaatimusmäärittely](https://github.com/essitepp/ot-harjoitustyo/blob/master/Sudoku/dokumentaatio/vaatimusmaarittely.md)
+[Vaatimusmäärittely](https://github.com/essitepp/ot-harjoitustyo/blob/master/Sudoku/dokumentaatio/vaatimusmaarittely.md)  
 [Työaikakirjanpito](https://github.com/essitepp/ot-harjoitustyo/blob/master/Sudoku/dokumentaatio/tyoaikakirjanpito.md)
