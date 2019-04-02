@@ -10,10 +10,10 @@ Sovellus on sudokupeli.
 - käyttäjä voi tyhjentää sudokun
 	- poistaa sudokusta käyttäjän syöttämät numerot
 - käyttäjä voi aloittaa uuden sudokun
-- käyttäjä voi katsoa listaa tallennetuista pisteistä
-
-- kun kaikki numerot on syötetty sudokuun oikein, sovellus ilmoittaa että sudoku on oikein ja näyttää käyttäjän pisteet
-- käyttäjä voi tallentaa pisteensä pistelistaan tai jatkaa seuraavaan sudokuun
+- käyttäjä voi tarkistaa onko sudoku ratkaistu oikein
+- jos sudoku on oikein, käyttäjä voi tallentaa pisteensä pistelistaan tai jatkaa seuraavaan sudokuun
 	- jos käyttäjä haluaa tallentaa pisteensä, sovellus pyytää käyttäjää syöttämään nimimerkin
+
+- käyttäjä voi katsoa listaa tallennetuista pisteistä
 
 
