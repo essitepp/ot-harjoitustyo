@@ -7,5 +7,5 @@
 |11.4|2 h|sovelluksen rakenteen suunnittelua|
 |15.6|8 h|sovelluksen toimintojen lisäämistä, tietokannan käyttöönotto|
 |16.6|2 h|tiedon tallentaminen tietokantaan|
-|16.6|3 h|testaus, jacoco, checkstyle|
+|16.6|3 h|testaus, jacoco, checkstyle, dokumentaation kehitys|
 |yht|19 h||
