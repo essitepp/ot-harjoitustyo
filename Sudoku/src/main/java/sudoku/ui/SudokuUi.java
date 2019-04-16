@@ -87,7 +87,7 @@ public class SudokuUi extends Application {
             result.initModality(Modality.WINDOW_MODAL);
             result.initOwner(stage);
 
-            if (!sudoku.check()) {
+            if (sudoku.check()) {
                 timeline.stop();
                 Label textCorrect = new Label("Oikein!");
                 Button saveScore = new Button("Tallenna tulos");
