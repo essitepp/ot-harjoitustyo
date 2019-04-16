@@ -11,9 +11,8 @@ Sovellus on sudokupeli.
 	- poistaa sudokusta käyttäjän syöttämät numerot
 - käyttäjä voi aloittaa uuden sudokun
 - käyttäjä voi tarkistaa onko sudoku ratkaistu oikein
-- jos sudoku on oikein, käyttäjä voi tallentaa pisteensä pistelistaan tai jatkaa seuraavaan sudokuun
-	- jos käyttäjä haluaa tallentaa pisteensä, sovellus pyytää käyttäjää syöttämään nimimerkin
-
-- käyttäjä voi katsoa listaa tallennetuista pisteistä
+- jos sudoku on oikein, käyttäjä voi tallentaa tuloksensa tuloslistaan tai jatkaa seuraavaan sudokuun
+	- jos käyttäjä haluaa tallentaa tuloksensa, sovellus pyytää käyttäjää syöttämään nimimerkin
+- käyttäjä voi katsoa listaa tallennetuista tuloksista
 
 
