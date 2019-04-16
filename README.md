@@ -4,5 +4,5 @@
 ## Dokumentaatio
 
 [Vaatimusmäärittely](https://github.com/essitepp/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)  
-[Työaikakirjanpito](https://github.com/essitepp/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)
+[Työaikakirjanpito](https://github.com/essitepp/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md)  
 [Arkkitehtuurikuvaus](https://github.com/essitepp/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
