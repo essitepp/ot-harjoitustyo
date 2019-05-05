@@ -26,9 +26,6 @@ import javafx.util.Duration;
 import sudoku.dao.*;
 import sudoku.domain.*;
 
-/**
- * Sovelluksen käyttöliittymäluokka.
- */
 public class SudokuUi extends Application {
 
     private Sudoku sudoku;
