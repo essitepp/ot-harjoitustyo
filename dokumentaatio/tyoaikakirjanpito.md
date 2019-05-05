@@ -11,4 +11,4 @@
 |26.4.|1 h|pieniä korjauksia|
 |4.5.|8 h|tuloslista, testikattavuus|
 |5.5.|9 h|dokumentointia ja pieniä korjauksia|
-|yht|36 h||
+|yht|37 h||
