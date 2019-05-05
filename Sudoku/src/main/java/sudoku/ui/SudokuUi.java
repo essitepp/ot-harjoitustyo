@@ -3,7 +3,6 @@ package sudoku.ui;
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Properties;
-import java.util.Scanner;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -32,7 +31,6 @@ public class SudokuUi extends Application {
     private ArrayList<Square> squares;
     private SudokuDao sudokuDao;
     private ScoreDao scoreDao;
-    private Scanner scanner;
 
     @Override
     public void init() throws Exception {
@@ -44,7 +42,6 @@ public class SudokuUi extends Application {
         this.squares = new ArrayList<>();
         this.sudokuDao = new SqlSudokuDao(database);
         this.scoreDao = new SqlScoreDao(database);
-        this.scanner = new Scanner(System.in);
         this.sudoku = new Sudoku(squares, sudokuDao, scoreDao);
         sudoku.newNumbers();
     }

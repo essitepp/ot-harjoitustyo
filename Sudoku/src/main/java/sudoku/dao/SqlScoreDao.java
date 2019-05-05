@@ -18,9 +18,11 @@ public class SqlScoreDao implements ScoreDao {
 
     @Override
     public void add(String user, int score) {
+        String create = "CREATE TABLE IF NOT EXISTS Score (user STRING, time INTEGER);";
         String query = "INSERT INTO Score (user, time) VALUES ('" + user + "', " + score + ");";
         try (Connection connection = DriverManager.getConnection("jdbc:sqlite:./" + database, "sa", "");
                 Statement stmt = connection.createStatement()) {
+            stmt.execute(create);
             stmt.execute(query);
             connection.close();
         } catch (SQLException e) {
