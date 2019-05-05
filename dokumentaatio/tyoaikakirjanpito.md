@@ -9,5 +9,6 @@
 |16.4.|2 h|tiedon tallentaminen tietokantaan|
 |16.4.|3 h|testaus, jacoco, checkstyle, dokumentaation kehitys|
 |26.4.|1 h|pieniä korjauksia|
-|3.5.||tuloslista|
-|yht|19 h||
+|4.5.|8 h|tuloslista, testikattavuus|
+|5.5.|8 h|dokumentointia|
+|yht|36 h||
