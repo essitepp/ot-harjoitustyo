@@ -18,7 +18,7 @@ Sovelluksen käyttöliittymän eri näkymiä ovat:
 
 ## Sovelluslogiikka
 
-Sovelluksen luokka/pakkauskaavio:
+Sovelluksen luokka/pakkauskaavio:  
 ![luokkakaavio](https://github.com/essitepp/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/luokkakaavio.png)
 
 ## Tietojen tallennus
