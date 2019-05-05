@@ -14,7 +14,7 @@
 [Työaikakirjanpito](https://github.com/essitepp/ot-harjoitustyo/blob/master/dokumentaatio/tyoaikakirjanpito.md) 
 
 ## Releaset
-
+[Loppupalautus](https://github.com/essitepp/ot-harjoitustyo/releases/tag/Loppupalautus)
 
 ## Komentorivitoiminnot
 
