@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Lataa tiedostot sudoku.jar ja database.db
+Lataa tiedostot [sudoku.jar ja database.db](https://github.com/essitepp/ot-harjoitustyo/releases/tag/Loppupalautus)
 
 ## Kongigurointi
 
