@@ -1,5 +1,7 @@
 # Käyttöohje
 
+Lataa tiedostot sudoku.jar ja database.db
+
 ## Kongigurointi
 
 Sovelluksen käyttämä tietokanta määritetään konfiguraatiotiedostossa config.properties. Määritys on muodossa
