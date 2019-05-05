@@ -11,12 +11,18 @@ import java.util.Random;
 
 public class SqlSudokuDao implements SudokuDao {
     
+    private String database;
+    
+    public SqlSudokuDao(String database) {
+        this.database = database;
+    }
+    
     @Override
     public String getSudoku() {
         String sudoku = "";
         int id = getRandomId();
         String query = "SELECT numbers FROM Sudoku WHERE id = " + id + ";";
-        try (Connection connection = DriverManager.getConnection("jdbc:sqlite:./database", "sa", "");
+        try (Connection connection = DriverManager.getConnection("jdbc:sqlite:./" + database, "sa", "");
                 PreparedStatement stmt = connection.prepareStatement(query)) {
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
@@ -29,9 +35,9 @@ public class SqlSudokuDao implements SudokuDao {
     }
     
     private int getRandomId() {
-        int amount = 0;
+        int amount = 1;
         String query = "SELECT COUNT(id) FROM Sudoku";
-        try (Connection connection = DriverManager.getConnection("jdbc:sqlite:./database", "sa", "");
+        try (Connection connection = DriverManager.getConnection("jdbc:sqlite:./" + database, "sa", "");
                 PreparedStatement stmt = connection.prepareStatement(query)) {
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {

@@ -1,6 +1,8 @@
 package sudoku.ui;
 
+import java.io.FileInputStream;
 import java.util.ArrayList;
+import java.util.Properties;
 import java.util.Scanner;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
@@ -33,10 +35,15 @@ public class SudokuUi extends Application {
     private Scanner scanner;
 
     @Override
-    public void init() {
+    public void init() throws Exception {
+        Properties properties = new Properties();
+        properties.load(new FileInputStream("config.properties"));
+        
+        String database = properties.getProperty("database");
+        
         this.squares = new ArrayList<>();
-        this.sudokuDao = new SqlSudokuDao();
-        this.scoreDao = new SqlScoreDao();
+        this.sudokuDao = new SqlSudokuDao(database);
+        this.scoreDao = new SqlScoreDao(database);
         this.scanner = new Scanner(System.in);
         this.sudoku = new Sudoku(squares, sudokuDao, scoreDao);
         sudoku.newNumbers();
@@ -48,13 +55,13 @@ public class SudokuUi extends Application {
 
     @Override
     public void start(Stage stage) {
-
+        
         Button newSudoku = new Button("Uusi sudoku");
         Button reset = new Button("Tyhjennä");
         Button check = new Button("Tarkista");
         Button scores = new Button("Tulokset");
         Label time = new Label(sudoku.getTimer().toString());
-
+        
         Timeline timeline = new Timeline(new KeyFrame(
                 Duration.millis(1000),
                 ae -> {
@@ -103,6 +110,8 @@ public class SudokuUi extends Application {
                     saveButton.setOnAction((ev) -> {
                         sudoku.saveScore(nameField.getCharacters().toString());
                         result.close();
+                        newSudoku.fire();
+                        scores.fire();
                     });
 
                     VBox vBoxSave = new VBox();
@@ -140,7 +149,24 @@ public class SudokuUi extends Application {
         });
 
         scores.setOnAction((event) -> {
-            //tuloslista
+            Stage scoreStage =new Stage();
+            scoreStage.setTitle("TOP 10");
+            scoreStage.initModality(Modality.WINDOW_MODAL);
+            scoreStage.initOwner(stage);
+            
+            VBox vbox = new VBox();
+            vbox.setPadding(new Insets(10, 30, 10, 30));
+            
+            for (String score : scoreDao.list()) {
+                Label scoreLabel = new Label(score);
+                scoreLabel.setFont(Font.font(15));
+                vbox.getChildren().add(scoreLabel);
+            }
+            
+            Scene scoreScene = new Scene(vbox);
+            scoreStage.setScene(scoreScene);
+            scoreStage.show();
+            
         });
 
         for (Square square : squares) {

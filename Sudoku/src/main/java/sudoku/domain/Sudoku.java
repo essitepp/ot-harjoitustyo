@@ -20,7 +20,7 @@ public class Sudoku {
         this.numbers = new int[9][9];
         this.timer = new Timer();
     }
-    
+
     public Timer getTimer() {
         return this.timer;
     }
@@ -28,13 +28,15 @@ public class Sudoku {
     public int[][] getNumbers() {
         return this.numbers;
     }
-    
+
     public void newNumbers() {
         String[] rows = sudokuDao.getSudoku().split("\n");
-        for (int i = 0; i < 9; i++) {
-            String[] columns = rows[i].split("");
-            for (int j = 0; j < 9; j++) {
-                this.numbers[i][j] = Integer.valueOf(columns[j]);
+        if (rows.length > 0) {
+            for (int i = 0; i < 9; i++) {
+                String[] columns = rows[i].split("");
+                for (int j = 0; j < 9; j++) {
+                    this.numbers[i][j] = Integer.valueOf(columns[j]);
+                }
             }
         }
     }
@@ -45,7 +47,7 @@ public class Sudoku {
             if (button.getText().equals(" ")) {
                 button.setText("1");
             } else if (button.getText().equals("9")) {
-                button.setText("1");
+                button.setText(" ");
             } else {
                 button.setText("" + (Integer.valueOf(button.getText()) + 1));
             }
@@ -57,23 +59,18 @@ public class Sudoku {
             square.getButton().setText("" + numbers[square.getY()][square.getX()]);
             if (square.getButton().getText().equals("0")) {
                 square.getButton().setText(" ");
+                square.getButton().setStyle("-fx-text-fill: #4970b7");
                 square.unlock();
             } else {
                 square.lock();
+                square.getButton().setStyle("-fx-text-fill: black");
             }
         }
         this.timer.reset();
     }
-    
+
     public void saveScore(String user) {
         int time = timer.getMinutes() * 60 + timer.getSeconds();
-//        String user = "";
-//        while (true) {
-//            user = scanner.nextLine();
-//            if (user.length() > 0 && user.length() <= 20) {
-//                break;
-//            }
-//        }
         scoreDao.add(user, time);
     }
 
@@ -120,9 +117,6 @@ public class Sudoku {
         ArrayList<Integer> list = new ArrayList<>();
         for (Square square : squares) {
             if (square.getX() == column) {
-                if (square.getButton().getText().equals(" ")) {
-                    return false;
-                }
                 int number = Integer.valueOf(square.getButton().getText());
                 if (list.contains(number)) {
                     return false;
@@ -138,9 +132,6 @@ public class Sudoku {
         ArrayList<Integer> list = new ArrayList<>();
         for (Square square : squares) {
             if (square.getY() >= row && square.getY() < row + 3 && square.getX() >= column && square.getX() < column + 3) {
-                if (square.getButton().getText().equals(" ")) {
-                    return false;
-                }
                 int number = Integer.valueOf(square.getButton().getText());
                 if (list.contains(number)) {
                     return false;

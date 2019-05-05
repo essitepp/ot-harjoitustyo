@@ -15,6 +15,7 @@ public class Square {
         this.button = button;
         this.y = y;
         this.x = x;
+        this.locked = false;
     }
     
     public void lock() {
