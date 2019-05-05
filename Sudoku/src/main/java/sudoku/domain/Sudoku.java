@@ -1,10 +1,12 @@
 package sudoku.domain;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 import javafx.scene.control.Button;
 import sudoku.dao.*;
 
+/**
+ * Luokka vastaa sovelluslogiikasta
+ */
 public class Sudoku {
 
     private ArrayList<Square> squares;
@@ -28,7 +30,10 @@ public class Sudoku {
     public int[][] getNumbers() {
         return this.numbers;
     }
-
+    
+    /**
+     * Metodi asettaa sudokun numbers-taulukkoon tietokannasta haetun satunnaisen sudokun numerot.
+     */
     public void newNumbers() {
         String[] rows = sudokuDao.getSudoku().split("\n");
         if (rows.length > 0) {
@@ -40,7 +45,11 @@ public class Sudoku {
             }
         }
     }
-
+    
+    /**
+     * Metodi kasvattaa parametrina annetun Square-olion numeroa yhdellä.
+     * @param square Square
+     */
     public void changeNumber(Square square) {
         if (!square.isLocked()) {
             Button button = square.getButton();
@@ -53,7 +62,10 @@ public class Sudoku {
             }
         }
     }
-
+    
+    /**
+     * Metodi asettaa sudokuruudukon painikkeiden numerot numbers-taulukon mukaisiksi. 
+     */
     public void reset() {
         for (Square square : squares) {
             square.getButton().setText("" + numbers[square.getY()][square.getX()]);
@@ -68,12 +80,20 @@ public class Sudoku {
         }
         this.timer.reset();
     }
-
+    
+    /**
+     * Metodi tallentaa tuloksen parametrina annetulla nimimerkillä.
+     * @param user nimimerkki
+     */
     public void saveScore(String user) {
         int time = timer.getMinutes() * 60 + timer.getSeconds();
         scoreDao.add(user, time);
     }
 
+    /**
+     * Metodi tarkastaa sudokun ratkaisun.
+     * @return true jos ratkaisu on oikein, muulloin false
+     */
     public boolean check() {
         for (int i = 0; i < 9; i++) {
             if (!checkRow(i)) {

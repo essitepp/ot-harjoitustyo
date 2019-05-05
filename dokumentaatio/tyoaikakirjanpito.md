@@ -4,8 +4,10 @@
 |:----|:---|:------|
 |26.3.|1 h|sovelluksen vaatimusmäärittely|
 |2.4.|3 h|käyttöliittymä|
-|11.4|2 h|sovelluksen rakenteen suunnittelua|
-|15.6|8 h|sovelluksen toimintojen lisäämistä, tietokannan käyttöönotto|
-|16.6|2 h|tiedon tallentaminen tietokantaan|
-|16.6|3 h|testaus, jacoco, checkstyle, dokumentaation kehitys|
+|11.4.|2 h|sovelluksen rakenteen suunnittelua|
+|15.4.|8 h|sovelluksen toimintojen lisäämistä, tietokannan käyttöönotto|
+|16.4.|2 h|tiedon tallentaminen tietokantaan|
+|16.4.|3 h|testaus, jacoco, checkstyle, dokumentaation kehitys|
+|26.4.|1 h|pieniä korjauksia|
+|3.5.||tuloslista|
 |yht|19 h||

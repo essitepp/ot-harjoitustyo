@@ -3,7 +3,9 @@ package sudoku.domain;
 
 import javafx.scene.control.Button;
 
-
+/**
+ * Luokka kuvaa yhtä sudokun ruutua, ja sisältää tiedot ruudun painikkeesta, sijainnista ja lukintastatuksesta.
+ */
 public class Square {
     
     private Button button;
@@ -18,10 +20,16 @@ public class Square {
         this.locked = false;
     }
     
+    /**
+     * Metodi lukitsee ruudun.
+     */
     public void lock() {
         this.locked = true;
     }
     
+    /**
+     * Metodi avaa ruudun lukituksen.
+     */
     public void unlock() {
         this.locked = false;
     }
@@ -40,10 +48,5 @@ public class Square {
     
     public boolean isLocked() {
         return this.locked;
-    }
-    
-    public String toString() {
-        return this.y + "," + this.x;
-    }
-    
+    }  
 }

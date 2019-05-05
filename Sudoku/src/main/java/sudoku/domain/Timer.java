@@ -1,5 +1,8 @@
 package sudoku.domain;
 
+/**
+ * Luokka pitää kirjaa kuluneesta ajasta minuutteina ja sekunteina.
+ */
 public class Timer {
 
     private int seconds;
@@ -37,6 +40,9 @@ public class Timer {
         return this.minutes;
     }
 
+    /**
+     * Metodi kasvattaa aikaa yhdellä.
+     */
     public void increase() {
         this.seconds++;
         if (this.seconds == 60) {
@@ -45,6 +51,9 @@ public class Timer {
         }
     }
 
+    /**
+     * Metodi palauttaa ajan nollaan.
+     */
     public void reset() {
         this.seconds = 0;
         this.minutes = 0;

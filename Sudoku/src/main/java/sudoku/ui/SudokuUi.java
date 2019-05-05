@@ -26,6 +26,9 @@ import javafx.util.Duration;
 import sudoku.dao.*;
 import sudoku.domain.*;
 
+/**
+ * Sovelluksen käyttöliittymäluokka.
+ */
 public class SudokuUi extends Application {
 
     private Sudoku sudoku;
@@ -55,7 +58,7 @@ public class SudokuUi extends Application {
 
     @Override
     public void start(Stage stage) {
-        
+                
         Button newSudoku = new Button("Uusi sudoku");
         Button reset = new Button("Tyhjennä");
         Button check = new Button("Tarkista");

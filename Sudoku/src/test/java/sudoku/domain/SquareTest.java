@@ -57,9 +57,4 @@ public class SquareTest {
     public void getYWorks() {
         assertEquals(5, square.getY());
     }
-    
-    @Test
-    public void toStringWorks() {
-        assertEquals("5,5", square.toString());
-    }
 }
