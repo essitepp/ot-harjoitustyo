@@ -1,14 +1,14 @@
-#Arkkitehtuurikuvaus
+# Arkkitehtuurikuvaus
 
 
-##Pakkausrakenne
+## Pakkausrakenne
 
 ![pakkauskaavio](https://github.com/essitepp/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/pakkauskaavio.png)
 
 Pakkaus sudoku.ui sisältää ohjelman käyttöliittymän, pakkaus sudoku.domain sovelluslogiikan, ja pakkaus sudoku.dao koodin tietokannan käsittelyyn.
 
 
-##Käyttöliittymä
+## Käyttöliittymä
 
 Sovelluksen käyttöliittymän eri näkymiä ovat:
 - Päänäkymä, joka sisältää peliruudukon sekä painikkeet sudokun vaihtamiseen, tyhjentämiseen ja tarkistamiseen sekä tuloslistan näyttämiseen.
@@ -16,22 +16,22 @@ Sovelluksen käyttöliittymän eri näkymiä ovat:
 - Tarkistusnäkymä, kun ratkaisu on väärin. Näkymä sisältää tekstin, joka kertoo ratkaisun olevan väärin.
 - Tulosnäkymä, joka sisältää listan kymmenestä parhaasta tuloksesta.
 
-##Sovelluslogiikka
+## Sovelluslogiikka
 
 Sovelluksen luokka/pakkauskaavio:
 ![luokkakaavio](https://github.com/essitepp/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/luokkakaavio.png)
 
-##Tietojen tallennus
+## Tietojen tallennus
 
 Sovelluksen tiedot tallennetaan tietokantaan, jota käsitellään luokkien SqlSudokuDao ja SqlScoreDao avulla.
 
-###Tietokanta
+### Tietokanta
 
 Sovelluksen tietokanta sisältää tietokantataulut Sudoku, johon ratkaistavat sudokut on tallennettu, sekä Score, johon pelaajien tulokset tallennetaan.
 
-##Päätoiminnallisuudet
+## Päätoiminnallisuudet
 
-####Uuden sudokun aloittaminen
+#### Uuden sudokun aloittaminen
 
 Kun käyttäjä klikkaa painiketta "Uusi sudoku", sovellus toimii seuraavasti:
 ![sekvenssikaavio](https://github.com/essitepp/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/sekvenssikaavio.png)
